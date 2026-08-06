@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login | Public Service Request Tracker</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/859df3b28a.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="home.css">
+    </head>
+    <body>
+        <header class="header">
+            <h1><i class="fa-solid fa-building-user"></i> Public Service Request Tracker</h1>
+            <nav classs="nav-links">
+                <a href="home.html">Back to Home</a>
+            </nav>
+        </header>
+        <div class="hero">
+            <div class="login-container">
+                <h1>Login</h1>
+                <form class="form" id="login-form">
+                    <input id="username" name="username" class="input" type="text" placeholder="Username" required>
+                    <input id="password" name="password" class="input" type="text" placeholder="Password" required>
+                    <select id="user-type" name="user-type" class="input" required>
+                        <option value="">Select User Type</option>
+                        <option value="user">Citizen</option>
+                        <option value="partner">Service Partner</option>
+                    </select>
+                    <div class="error-msg" style="color: red;"></div>
+                    <button type="submit" class="submit-btn">Login</button>
+                </form>
+            </div>
+        </div>
+        <script src="storage.js"></script>
+        <script src="login.js"></script>    
+    </body>
+</html>

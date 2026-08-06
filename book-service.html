@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Public Service Request Tracker</title>
+        <link rel="stylesheet" href="home.css">
+    </head>
+    <body>
+        <header class="header">
+            <h1>Book Service</h1>
+            <nav>
+                <a href="user.html">Dashboard</a>
+            </nav>
+        </header>
+        <div class="hero service-booking-container">
+            <div class="login-container">
+                <form id="bookingForm" class="form">
+                    <select id="service" class="input" required>
+                        <option value="">Select Service</option>
+                        <option>Plumbers</option>
+                        <option>Electricians</option>
+                        <option>Carpenters</option>
+                        <option>RMP / First Aid Doctors</option>
+                        <option>AC Repair Technicians</option>
+                        <option>Appliance Repair Technicians</option>
+                        <option>Painters</option>
+                        <option>House Cleaning Services</option>
+                        <option>Internet/Cable Technicians</option>
+                        <option>Gas Stove Repair</option>
+                    </select>
+                    <button type="button" class="submit-btn" id="viewPartnersBtn">View Available Partners</button>
+                    <div id="partnerList" class="partner-list"></div>
+                    <input class="input" id="phone" placeholder="Phone Number" required>
+                    <input class="input" id="address" placeholder="Address" required>
+                    <textarea id="problem" class="input" rows="5" placeholder="Describe the problem" required></textarea>
+                    <input type="hidden" id="selectedPartner">
+                    <button class="submit-btn">Submit Request</button>
+                </form>
+            </div>
+        </div>
+        <script src="storage.js"></script>
+        <script src="user.js"></script>
+    </body>
+</html>

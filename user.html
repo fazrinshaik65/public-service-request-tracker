@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Public Service Request Tracker</title>
+        <link rel="stylesheet" href="home.css">
+        <script src="https://kit.fontawesome.com/859df3b28a.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header class="header">
+            <h1><i class="fa-solid fa-user"></i> Citizen Dashboard</h1>
+            <nav>
+                <a href="book-service.html">Book Service</a>
+                <a href="history.html">History</a>
+                <a href="#" id="logout">Logout</a>
+            </nav>
+        </header>
+        <div class="hero">
+            <h2>Welcome</h2>
+            <h3 id="username"></h3>
+            <br><br>
+            <div class="container flex">
+                <div class="card">
+                    <h2 id="totalRequests">0</h2>
+                    <p>Total Requests</p>
+                </div>
+                <div class="card">
+                    <h2 id="pendingRequests">0</h2>
+                    <p>Pending</p>
+                </div>
+                <div class="card">
+                    <h2 id="completedRequests">0</h2>
+                    <p>Completed</p>
+                </div>
+            </div>
+            <div class="container flex">
+                <div class="card">
+                    <i class="fa-solid fa-screwdriver-wrench fa-3x"></i>
+                    <h3>Book Service</h3>
+                    <p>Book any nearby essential service.</p>
+                    <br>
+                    <button class="submit-btn"
+                    onclick="location.href='book-service.html'">
+                    Book
+                    </button>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-clock-rotate-left fa-3x"></i>
+                    <h3>Request History</h3>
+                    <p>View all your requests.</p>
+                    <br>
+                    <button class="submit-btn"
+                    onclick="location.href='history.html'">
+                    Open
+                    </button>
+                </div>
+            </div>
+        </div>
+        <script src="user.js"></script>
+    </body>
+</html>

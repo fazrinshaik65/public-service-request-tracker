@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Public Service Request Tracker</title>
+        <link rel="stylesheet" href="home.css">
+    </head>
+    <body>
+        <header class="header">
+            <h1>Request History</h1>
+            <nav>
+                <a href="user.html">Dashboard</a>
+            </nav>
+        </header>
+        <select id="filterStatus" class="input">
+            <option value="All">All</option>
+            <option value="Pending">Pending</option>
+            <option value="Accepted">Accepted</option>
+            <option value="On the Way">On the Way</option>
+            <option value="Work Started">Work Started</option>
+            <option value="Completed">Completed</option>
+            <option value="Rejected">Rejected</option>
+        </select>
+        <div id="history" class="container">
+        </div>
+        <script src="user.js"></script>
+    </body>
+</html>
