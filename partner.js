@@ -117,8 +117,6 @@ function submitRejection(){
 
     closeRejectModal();
 
-    alert("Request rejected successfully.");
-
     location.reload();
 }
 function updateStatus(index,status){
