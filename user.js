@@ -29,7 +29,6 @@ if(bookingForm){
         };
         requests.push(request);
         localStorage.setItem("requests",JSON.stringify(requests));
-        alert("Service Request Submitted Successfully");
         window.location.href="history.html";
     });
 }
@@ -184,7 +183,6 @@ function deleteRequest(id){
         return request.id !== id;
     });
     localStorage.setItem("requests", JSON.stringify(requests));
-    alert("Request deleted successfully.");
     location.reload();
 }
 function giveRating(id){
@@ -208,7 +206,6 @@ if(ratingForm){
         });
         localStorage.setItem("requests",JSON.stringify(requests));
         localStorage.removeItem("currentRequest");
-        alert("Thank you for your feedback!");
         window.location.href="history.html";
     });
 }
