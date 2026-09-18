@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Public Service Request Tracker</title>
+        <link rel="stylesheet" href="home.css">
+    </head>
+    <body>
+        <header class="header">
+            <h1>Rate Completed Service</h1>
+            <nav>
+                <a href="history.html">Back</a>
+            </nav>
+        </header>
+        <div class="hero">
+            <div class="login-container">
+                <form id="ratingForm">
+                    <h3 id="requestId"></h3>
+                    <select id="rating" class="input" required>
+                        <option value="">Select Rating</option>
+                        <option value="5">⭐⭐⭐⭐⭐ (5)</option>
+                        <option value="4">⭐⭐⭐⭐ (4)</option>
+                        <option value="3">⭐⭐⭐ (3)</option>
+                        <option value="2">⭐⭐ (2)</option>
+                        <option value="1">⭐ (1)</option>
+                    </select>
+                    <textarea id="feedback" class="input" rows="5" placeholder="Write your feedback" required></textarea>
+                    <button class="submit-btn"> Submit Review</button>
+                </form>
+            </div>
+        </div>
+        <script src="user.js"></script>
+    </body>
+</html>
